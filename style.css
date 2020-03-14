@@ -1,0 +1,253 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F1F1F1;
+}
+
+.container {
+    width: 96%;
+    height: 100%;
+    margin: 0 auto;
+    }
+
+/*nav*/ 
+
+nav .container {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+
+nav {
+    display: flex;
+    background-color: #4E4E4E;
+    height: 50px;
+}
+
+nav h1 {
+    font-weight: bold;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+.nav-bar {
+    display: none;
+}
+
+/* Landing Page*/
+
+.landing-page .container {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+
+.landing-page {
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://langero.com/wp-content/uploads/2019/08/forest-547363_1920.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.landing-page-shadow {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.15);
+
+}
+
+.landing-page-text {
+    width: 90%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: center;
+}
+
+.landing-page h1 {
+    font-size: 36px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.landing-page h2 {
+    font-size: 18px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.landing-page a:link, .landing-page a:visited {
+    width: 158px;
+    border: 3px solid #FFFFFF;
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 18px;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-align: center;
+    padding: 8px 0;
+}
+
+.landing-page a:hover, .landing-page a:active {
+    background-color: #FFFFFF;
+    color: black;
+    transition: all 1s ease-in-out;
+}
+
+/*about us*/
+
+.about-us {
+    padding: 50px 0px;
+}
+
+.about-us .container {
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.employee {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px; 
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+}
+
+.about-us .container h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color: #152D41;
+    margin-bottom: 50px;
+}
+
+.first-employee-photo, .second-employee-photo {
+    height: 200px;
+    width: 200px;
+    background-size: cover;
+    border-radius: 50%;
+    margin-bottom: 18px;
+}
+
+.first-employee-photo {
+    background-image: url(image/firstempolyee.jpg);
+}
+
+.about-employee-text {
+    font-size: 18px;
+    color: #000000;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-employee-text h2 {
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.second-employee-photo {
+    background-image: url(image/secondemployee.jpg);
+}
+
+/*offer*/
+
+.offer {
+    background-color: #405D78;
+    padding: 50px 0;
+}
+
+.offer .container h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-bottom: 50px;
+}
+
+.offer-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.box {
+    position: relative;
+    width: 100%;
+    margin-right: 8%;
+    margin-bottom: 8%;
+    background-color: #F1F1F1;
+    box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.20);
+    transition: all 0.5s ease-in-out;
+}
+
+.box::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+.box:hover {
+    transform: scale(1.05);
+}
+
+.dot {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: #E07A64;
+    top: -11px;
+    left: -11px;
+}
+
+.content {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+
+}
+
+.content h3 {
+    font-size: 24px;
+    color: #000000;
+}
+
+/*footer*/
+
+footer {
+    height: 71px;
+    background-color: #4E4E4E;
+    padding: 20px 0;
+}
+
+footer .container {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+}
+
+footer h2 {
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+i {
+    color: #FFFFFF;
+    margin: 0 5px;
+}
